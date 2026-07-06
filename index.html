@@ -324,7 +324,6 @@
         <i class="fa-brands fa-whatsapp text-3xl"></i>
     </a>
 
-    <!-- Script del Negocio -->
     <script>
         function requestProduct(productName, price) {
             const phoneNumber = "51939801761"; 
@@ -337,4 +336,8 @@
             const encodedMessage = encodeURIComponent(message);
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
             
-            window.open(whatsappUrl
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
