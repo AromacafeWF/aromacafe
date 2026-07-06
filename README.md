@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome para iconos de Yape, Plin y WhatsApp -->
+    <!-- FontAwesome para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <script>
@@ -47,23 +47,19 @@
 </head>
 <body class="min-h-screen flex flex-col antialiased">
 
-    <!-- Barra de Navegación -->
-    <nav class="glass-nav sticky top-0 z-50 border-b border-stone-200/80 shadow-sm transition-all">
+    <nav class="glass-nav sticky top-0 z-50 border-b border-stone-200/80 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Logotipo de la Marca -->
                 <div class="flex flex-col items-center sm:items-start">
                     <span class="text-xl sm:text-2xl font-bold tracking-widest text-espresso font-serif">W & F</span>
                     <span class="text-[10px] uppercase tracking-[0.2em] text-gold font-medium mt-[-4px]">Aroma Café</span>
                 </div>
-                <!-- Enlaces de Navegación -->
                 <div class="hidden md:flex items-center gap-8 text-sm font-medium text-espresso/80">
-                    <a href="#inicio" class="hover:text-gold transition-colors duration-200 border-b-2 border-transparent hover:border-gold pb-1">Inicio</a>
-                    <a href="#productos" class="hover:text-gold transition-colors duration-200 border-b-2 border-transparent hover:border-gold pb-1">Tienda</a>
-                    <a href="#origen" class="hover:text-gold transition-colors duration-200 border-b-2 border-transparent hover:border-gold pb-1">Origen</a>
-                    <a href="#pago" class="hover:text-gold transition-colors duration-200 border-b-2 border-transparent hover:border-gold pb-1">Método de Pago</a>
+                    <a href="#inicio" class="hover:text-gold transition-colors duration-200">Inicio</a>
+                    <a href="#productos" class="hover:text-gold transition-colors duration-200">Tienda</a>
+                    <a href="#origen" class="hover:text-gold transition-colors duration-200">Origen</a>
+                    <a href="#pago" class="hover:text-gold transition-colors duration-200">Pago</a>
                 </div>
-                <!-- Botón de Pedido Rápido -->
                 <div class="flex items-center gap-4">
                     <a href="#productos" class="bg-espresso hover:bg-gold text-white hover:text-espresso px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300 shadow-sm flex items-center gap-2">
                         <i class="fa-solid fa-bag-shopping"></i> Comprar Premium
@@ -73,14 +69,11 @@
         </div>
     </nav>
 
-    <!-- Sección de Portada Hero (Inspirada en image_71743e.jpg y usando tu foto real) -->
     <section id="inicio" class="relative bg-forest text-white py-20 lg:py-32 overflow-hidden">
-        <!-- Fondo de Naturaleza Amazonas -->
-        <div class="absolute inset-0 z-0 opacity-40 mix-blend-multiply bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?q=80&w=1600&auto=format&fit=crop');"></div>
+        <div class="absolute inset-0 z-0 opacity-45 mix-blend-multiply bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?q=80&w=1600&auto=format&fit=crop');"></div>
         <div class="absolute inset-0 bg-gradient-to-r from-espresso via-forest/90 to-transparent z-0"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <!-- Textos del Banner -->
             <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                 <span class="inline-flex items-center gap-2 bg-gold/20 border border-gold/40 text-gold px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
                     <i class="fa-solid fa-certificate"></i> 100% Gourmet de Lonya Grande
@@ -96,18 +89,14 @@
                     <a href="#productos" class="bg-gold hover:bg-amber-600 text-espresso hover:text-white font-bold px-8 py-4 rounded-xl transition duration-300 shadow-lg text-center text-sm uppercase tracking-wider flex items-center justify-center gap-2">
                         Ver Ofertas del Menú <i class="fa-solid fa-arrow-down"></i>
                     </a>
-                    <a href="#pago" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-8 py-4 rounded-xl transition duration-300 text-center text-sm flex items-center justify-center gap-2">
-                        Pagar con Yape/Plin <i class="fa-solid fa-mobile-screen"></i>
-                    </a>
                 </div>
             </div>
 
-            <!-- Imagen Destacada del Producto Real (image_a43b9f.jpg) -->
+            <!-- Presentación de la Bolsa Gourmet real en el Banner -->
             <div class="lg:col-span-5 flex justify-center">
                 <div class="relative max-w-[340px] sm:max-w-[380px] w-full bg-white/5 p-4 rounded-3xl border border-white/10 backdrop-blur-sm shadow-2xl">
                     <div class="rounded-2xl overflow-hidden aspect-[3/4] relative shadow-inner">
-                        <!-- Imagen real del producto como presentación principal en el Banner -->
-                        <img src="image_a43b9f.jpg" alt="Café Premium Selecto" class="w-full h-full object-cover">
+                        <img src="image_a5aedf.jpg" alt="Café Premium Selecto" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
                         <div class="absolute inset-0 bg-gradient-to-t from-espresso via-transparent to-transparent opacity-60"></div>
                         <div class="absolute bottom-4 left-4 right-4 text-left">
                             <p class="text-[10px] text-gold font-bold uppercase tracking-widest mb-1">Empaque de 500gr</p>
@@ -119,26 +108,22 @@
         </div>
     </section>
 
-    <!-- Sección de Productos / Packs Especiales -->
     <section id="productos" class="py-20 bg-cream">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <span class="text-gold text-xs font-bold tracking-widest uppercase block mb-2">Nuestras Ofertas Especiales</span>
                 <h2 class="text-3xl sm:text-4xl font-bold text-espresso font-serif">Elige tu Pack de Café Favorito</h2>
                 <div class="w-20 h-1 bg-gold mx-auto mt-4 rounded-full"></div>
-                <p class="text-stone-500 text-sm mt-4 leading-relaxed">Disfruta de la mejor calidad artesanal. Compra más bolsas juntas y obtén increíbles descuentos familiares con entrega garantizada.</p>
             </div>
 
-            <!-- Grid de Packs de Productos -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
-                <!-- PRODUCTO 1: Bolsa Sola (S/. 30) -->
+                <!-- CUADRO 1: Una Bolsa Sola (S/. 30) -->
                 <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-stone-200/60 flex flex-col justify-between">
                     <div>
-                        <!-- Contenedor de Imagen de Bolsa Única con image_a43b9f.jpg -->
                         <div class="h-72 bg-stone-100 relative overflow-hidden flex items-center justify-center p-4">
                             <div class="absolute inset-0 bg-gradient-to-b from-stone-50 to-stone-200/30"></div>
-                            <img src="image_a43b9f.jpg" alt="1 Bolsa W&F" class="h-[90%] w-[90%] object-cover rounded-xl shadow-md hover:scale-105 transition duration-300">
+                            <img src="image_a5aedf.jpg" alt="1 Bolsa W&F" class="h-[90%] w-[90%] object-cover rounded-xl shadow-md hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
                             <span class="absolute top-4 left-4 bg-espresso text-gold text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Unidad</span>
                         </div>
                         <div class="p-6 sm:p-8 space-y-3">
@@ -162,17 +147,16 @@
                     </div>
                 </div>
 
-                <!-- PRODUCTO 2: Dos Bolsas Juntas (S/. 60) -->
+                <!-- CUADRO 2: Dos Bolsas Juntas (S/. 60) -->
                 <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border-2 border-gold/40 flex flex-col justify-between relative md:-translate-y-2">
                     <span class="absolute top-4 right-4 z-10 bg-gold text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest shadow-md">Dúo Recomendado</span>
                     <div>
-                        <!-- Contenedor con efecto de doble bolsa usando image_a43b9f.jpg -->
                         <div class="h-72 bg-stone-100 relative overflow-hidden flex items-center justify-center p-4">
                             <div class="absolute inset-0 bg-gradient-to-b from-stone-50 to-stone-200/30"></div>
-                            <!-- Dos bolsas superpuestas artísticamente -->
+                            <!-- Dos bolsas de image_a5aedf.jpg superpuestas artísticamente -->
                             <div class="relative w-[85%] h-[90%]">
-                                <img src="image_a43b9f.jpg" alt="Bolsa Izquierda" class="absolute left-2 top-2 h-[90%] w-[75%] object-cover rounded-xl shadow-md rotate-[-6deg] transition duration-300 hover:rotate-0 z-10">
-                                <img src="image_a43b9f.jpg" alt="Bolsa Derecha" class="absolute right-2 bottom-2 h-[90%] w-[75%] object-cover rounded-xl shadow-lg rotate-[6deg] transition duration-300 hover:rotate-0 z-20">
+                                <img src="image_a5aedf.jpg" alt="Bolsa Izquierda" class="absolute left-2 top-2 h-[90%] w-[75%] object-cover rounded-xl shadow-md rotate-[-6deg] transition duration-300 hover:rotate-0 z-10" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
+                                <img src="image_a5aedf.jpg" alt="Bolsa Derecha" class="absolute right-2 bottom-2 h-[90%] w-[75%] object-cover rounded-xl shadow-lg rotate-[6deg] transition duration-300 hover:rotate-0 z-20" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
                             </div>
                         </div>
                         <div class="p-6 sm:p-8 space-y-3">
@@ -196,17 +180,16 @@
                     </div>
                 </div>
 
-                <!-- PRODUCTO 3: Tres Bolsas Juntas (S/. 89) -->
+                <!-- CUADRO 3: Tres Bolsas Juntas (S/. 89) -->
                 <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-stone-200/60 flex flex-col justify-between">
                     <div>
-                        <!-- Contenedor de Tres Bolsas Juntas utilizando image_a43b9f.jpg -->
                         <div class="h-72 bg-stone-100 relative overflow-hidden flex items-center justify-center p-4">
                             <div class="absolute inset-0 bg-gradient-to-b from-stone-50 to-stone-200/30"></div>
-                            <!-- Tres bolsas en abanico tridimensional -->
+                            <!-- Tres bolsas de image_a5aedf.jpg en abanico tridimensional -->
                             <div class="relative w-[90%] h-[90%] flex items-center justify-center">
-                                <img src="image_a43b9f.jpg" alt="Bolsa Fondo Izquierda" class="absolute left-1 h-[80%] w-[60%] object-cover rounded-xl shadow-sm rotate-[-12deg] opacity-90 z-10">
-                                <img src="image_a43b9f.jpg" alt="Bolsa Fondo Derecha" class="absolute right-1 h-[80%] w-[60%] object-cover rounded-xl shadow-sm rotate-[12deg] opacity-90 z-10">
-                                <img src="image_a43b9f.jpg" alt="Bolsa Frente Centro" class="absolute h-[90%] w-[65%] object-cover rounded-xl shadow-xl z-20">
+                                <img src="image_a5aedf.jpg" alt="Bolsa Fondo Izquierda" class="absolute left-1 h-[80%] w-[60%] object-cover rounded-xl shadow-sm rotate-[-12deg] opacity-90 z-10" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
+                                <img src="image_a5aedf.jpg" alt="Bolsa Fondo Derecha" class="absolute right-1 h-[80%] w-[60%] object-cover rounded-xl shadow-sm rotate-[12deg] opacity-90 z-10" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
+                                <img src="image_a5aedf.jpg" alt="Bolsa Frente Centro" class="absolute h-[90%] w-[65%] object-cover rounded-xl shadow-xl z-20" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
                             </div>
                             <span class="absolute top-4 left-4 bg-emerald-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider animate-pulse">Súper Ahorro</span>
                         </div>
@@ -238,16 +221,11 @@
         </div>
     </section>
 
-    <!-- Sección Destacada de Métodos de Pago Seguro (Yape/Plin) -->
     <section id="pago" class="py-16 bg-white border-t border-b border-stone-200/50 relative overflow-hidden">
-        <div class="absolute right-[-40px] top-[-40px] text-stone-100 pointer-events-none">
-            <i class="fa-solid fa-receipt text-[200px]"></i>
-        </div>
         <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
             <div class="bg-gradient-to-br from-espresso to-stone-900 text-white rounded-3xl p-8 sm:p-12 shadow-xl border-l-8 border-gold">
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
                     
-                    <!-- Información de Pago -->
                     <div class="md:col-span-7 space-y-4">
                         <span class="text-gold text-xs font-bold uppercase tracking-widest block"><i class="fa-solid fa-lock text-gold mr-1.5"></i> Pago Directo y Seguro</span>
                         <h3 class="text-2xl sm:text-3xl font-serif font-bold text-cream">Cancela al Instante con Yape o Plin</h3>
@@ -255,7 +233,6 @@
                             Para agilizar tu entrega, puedes pagar mediante transferencia móvil al mismo número de atención directa. Al finalizar tu pedido por WhatsApp, solo envíanos la captura de tu pago.
                         </p>
                         
-                        <!-- Tarjeta con Datos de Pago Directo -->
                         <div class="bg-white/5 border border-white/10 rounded-2xl p-4 sm:p-5 space-y-3">
                             <div class="flex items-center gap-3">
                                 <span class="bg-gold/20 text-gold p-2 rounded-lg text-sm"><i class="fa-solid fa-phone"></i></span>
@@ -274,7 +251,6 @@
                         </div>
                     </div>
 
-                    <!-- Botones de Pago Interactivo -->
                     <div class="md:col-span-5 flex flex-col gap-4">
                         <div class="bg-yape/10 border border-yape/30 rounded-2xl p-4 flex items-center justify-between gap-4">
                             <div class="flex items-center gap-2">
@@ -290,9 +266,6 @@
                             </div>
                             <i class="fa-solid fa-check text-plin"></i>
                         </div>
-                        <div class="text-center">
-                            <p class="text-[10px] text-stone-400 italic">Precios no incluyen costo de envío a domicilio.</p>
-                        </div>
                     </div>
 
                 </div>
@@ -300,7 +273,6 @@
         </div>
     </section>
 
-    <!-- Sección de Origen -->
     <section id="origen" class="py-20 bg-cream">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -313,22 +285,11 @@
                     <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
                         Nuestro café crece bajo la sombra de frondosos árboles nativos a más de 1600 metros de altitud. La combinación perfecta de suelos húmedos de la selva alta, microclimas únicos de los Andes orientales y un esmero familiar artesanal cosechado grano a grano garantizan un sabor selecto excepcional para paladares refinados.
                     </p>
-                    <div class="grid grid-cols-2 gap-4 pt-4">
-                        <div class="border-l-4 border-gold pl-4">
-                            <h4 class="text-lg font-bold font-serif text-espresso">Altitud Superior</h4>
-                            <p class="text-xs text-stone-500 mt-1">Cosechado a más de 1,600 m.s.n.m para un dulzor natural inigualable.</p>
-                        </div>
-                        <div class="border-l-4 border-gold pl-4">
-                            <h4 class="text-lg font-bold font-serif text-espresso">Tueste Medio</h4>
-                            <p class="text-xs text-stone-500 mt-1">Preserva todas las notas aromáticas de flores silvestres y cacao.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pie de Página (Footer) -->
     <footer class="bg-espresso text-cream border-t-4 border-gold py-12 px-4 sm:px-6 lg:px-8 mt-auto">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-white/5">
             <div class="space-y-4">
@@ -346,8 +307,7 @@
             </div>
             <div class="space-y-4">
                 <h4 class="text-sm font-semibold tracking-wider text-gold uppercase">Contacto y Soporte</h4>
-                <p class="text-xs text-stone-400">
-                    ¿Tienes consultas corporativas o compras al por mayor?<br>
+                <p class="text-xs text-stone-400 font-bold">
                     <a href="https://wa.me/51939801761" class="text-gold font-bold hover:underline block mt-2 text-sm">
                         <i class="fa-solid fa-phone mr-1"></i> +51 939 801 761
                     </a>
@@ -356,7 +316,6 @@
         </div>
         <div class="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[10px] text-stone-500">
             <p>© 2026 W&F Aroma Café. Todos los derechos reservados. Lonya Grande, Amazonas, Perú.</p>
-            <p>Hecho con amor y pasión cafetera ☕</p>
         </div>
     </footer>
 
@@ -365,7 +324,6 @@
         <i class="fa-brands fa-whatsapp text-3xl"></i>
     </a>
 
-    <!-- Script del Negocio -->
     <script>
         function requestProduct(productName, price) {
             const phoneNumber = "51939801761"; 
@@ -381,6 +339,20 @@
             window.open(whatsappUrl, '_blank');
         }
     </script>
-
 </body>
 </html>
+```
+eof
+
+---
+
+### 🚨 Un último paso súper importante:
+Para que las imágenes carguen y no aparezcan en blanco, debes guardar tu foto en GitHub exactamente con el nombre **`image_a5aedf.jpg`**.
+
+**Hazlo de esta manera muy fácil:**
+1. Ve a tu cuenta de GitHub aquí: 👉 **[https://github.com/AromacafeWF/aromacafe](https://github.com/AromacafeWF/aromacafe)**
+2. Haz clic en **"Add file"** y luego en **"Upload files"** *(Subir archivos)*.
+3. Elige tu imagen en tu computadora (asegúrate de que el archivo se llame exactamente **`image_a5aedf.jpg`** en letras minúsculas).
+4. Guarda los cambios haciendo clic abajo en el botón verde **"Commit changes"**.
+
+¡Listo! Ya habrás modificado tu página con éxito. Espera un minuto, actualiza tu enlace oficial en internet y verás tu hermosa bolsa de café real luciendo perfectamente en cada uno de tus productos.
