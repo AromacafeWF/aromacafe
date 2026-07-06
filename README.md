@@ -96,7 +96,7 @@
             <div class="lg:col-span-5 flex justify-center">
                 <div class="relative max-w-[340px] sm:max-w-[380px] w-full bg-white/5 p-4 rounded-3xl border border-white/10 backdrop-blur-sm shadow-2xl">
                     <div class="rounded-2xl overflow-hidden aspect-[3/4] relative shadow-inner">
-                        <img src="image_a5aedf.jpg" alt="Café Premium Selecto" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
+                        <img src="image_a617e2.jpg" alt="Café Premium Selecto" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
                         <div class="absolute inset-0 bg-gradient-to-t from-espresso via-transparent to-transparent opacity-60"></div>
                         <div class="absolute bottom-4 left-4 right-4 text-left">
                             <p class="text-[10px] text-gold font-bold uppercase tracking-widest mb-1">Empaque de 500gr</p>
@@ -123,7 +123,7 @@
                     <div>
                         <div class="h-72 bg-stone-100 relative overflow-hidden flex items-center justify-center p-4">
                             <div class="absolute inset-0 bg-gradient-to-b from-stone-50 to-stone-200/30"></div>
-                            <img src="image_a5aedf.jpg" alt="1 Bolsa W&F" class="h-[90%] w-[90%] object-cover rounded-xl shadow-md hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
+                            <img src="image_a617e2.jpg" alt="1 Bolsa W&F" class="h-[90%] w-[90%] object-cover rounded-xl shadow-md hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
                             <span class="absolute top-4 left-4 bg-espresso text-gold text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Unidad</span>
                         </div>
                         <div class="p-6 sm:p-8 space-y-3">
@@ -153,10 +153,10 @@
                     <div>
                         <div class="h-72 bg-stone-100 relative overflow-hidden flex items-center justify-center p-4">
                             <div class="absolute inset-0 bg-gradient-to-b from-stone-50 to-stone-200/30"></div>
-                            <!-- Dos bolsas de image_a5aedf.jpg superpuestas artísticamente -->
+                            <!-- Dos bolsas de image_a617e2.jpg superpuestas artísticamente -->
                             <div class="relative w-[85%] h-[90%]">
-                                <img src="image_a5aedf.jpg" alt="Bolsa Izquierda" class="absolute left-2 top-2 h-[90%] w-[75%] object-cover rounded-xl shadow-md rotate-[-6deg] transition duration-300 hover:rotate-0 z-10" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
-                                <img src="image_a5aedf.jpg" alt="Bolsa Derecha" class="absolute right-2 bottom-2 h-[90%] w-[75%] object-cover rounded-xl shadow-lg rotate-[6deg] transition duration-300 hover:rotate-0 z-20" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
+                                <img src="image_a617e2.jpg" alt="Bolsa Izquierda" class="absolute left-2 top-2 h-[90%] w-[75%] object-cover rounded-xl shadow-md rotate-[-6deg] transition duration-300 hover:rotate-0 z-10" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
+                                <img src="image_a617e2.jpg" alt="Bolsa Derecha" class="absolute right-2 bottom-2 h-[90%] w-[75%] object-cover rounded-xl shadow-lg rotate-[6deg] transition duration-300 hover:rotate-0 z-20" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
                             </div>
                         </div>
                         <div class="p-6 sm:p-8 space-y-3">
@@ -185,11 +185,11 @@
                     <div>
                         <div class="h-72 bg-stone-100 relative overflow-hidden flex items-center justify-center p-4">
                             <div class="absolute inset-0 bg-gradient-to-b from-stone-50 to-stone-200/30"></div>
-                            <!-- Tres bolsas de image_a5aedf.jpg en abanico tridimensional -->
+                            <!-- Tres bolsas de image_a617e2.jpg en abanico tridimensional -->
                             <div class="relative w-[90%] h-[90%] flex items-center justify-center">
-                                <img src="image_a5aedf.jpg" alt="Bolsa Fondo Izquierda" class="absolute left-1 h-[80%] w-[60%] object-cover rounded-xl shadow-sm rotate-[-12deg] opacity-90 z-10" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
-                                <img src="image_a5aedf.jpg" alt="Bolsa Fondo Derecha" class="absolute right-1 h-[80%] w-[60%] object-cover rounded-xl shadow-sm rotate-[12deg] opacity-90 z-10" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
-                                <img src="image_a5aedf.jpg" alt="Bolsa Frente Centro" class="absolute h-[90%] w-[65%] object-cover rounded-xl shadow-xl z-20" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
+                                <img src="image_a617e2.jpg" alt="Bolsa Fondo Izquierda" class="absolute left-1 h-[80%] w-[60%] object-cover rounded-xl shadow-sm rotate-[-12deg] opacity-90 z-10" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
+                                <img src="image_a617e2.jpg" alt="Bolsa Fondo Derecha" class="absolute right-1 h-[80%] w-[60%] object-cover rounded-xl shadow-sm rotate-[12deg] opacity-90 z-10" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
+                                <img src="image_a617e2.jpg" alt="Bolsa Frente Centro" class="absolute h-[90%] w-[65%] object-cover rounded-xl shadow-xl z-20" onerror="this.src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=600';">
                             </div>
                             <span class="absolute top-4 left-4 bg-emerald-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider animate-pulse">Súper Ahorro</span>
                         </div>
@@ -341,18 +341,3 @@
     </script>
 </body>
 </html>
-```
-eof
-
----
-
-### 🚨 Un último paso súper importante:
-Para que las imágenes carguen y no aparezcan en blanco, debes guardar tu foto en GitHub exactamente con el nombre **`image_a5aedf.jpg`**.
-
-**Hazlo de esta manera muy fácil:**
-1. Ve a tu cuenta de GitHub aquí: 👉 **[https://github.com/AromacafeWF/aromacafe](https://github.com/AromacafeWF/aromacafe)**
-2. Haz clic en **"Add file"** y luego en **"Upload files"** *(Subir archivos)*.
-3. Elige tu imagen en tu computadora (asegúrate de que el archivo se llame exactamente **`image_a5aedf.jpg`** en letras minúsculas).
-4. Guarda los cambios haciendo clic abajo en el botón verde **"Commit changes"**.
-
-¡Listo! Ya habrás modificado tu página con éxito. Espera un minuto, actualiza tu enlace oficial en internet y verás tu hermosa bolsa de café real luciendo perfectamente en cada uno de tus productos.
