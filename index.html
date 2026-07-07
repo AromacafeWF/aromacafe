@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>W&F Aroma Café</title>
 <style>
 body{background:#fff8f0;font-family:Arial;text-align:center;color:#3e2723;margin:0}
@@ -11,49 +12,49 @@ header{background:#3e2723;color:white;padding:30px}
 h1 span{color:#d4a76a}
 .card{display:inline-block;border:2px solid #d4a76a;padding:20px;margin:10px;border-radius:12px;width:210px;background:white;vertical-align:top;box-shadow:0 3px 8px rgba(0,0,0,0.1)}
 .card p{font-size:22px;font-weight:bold;color:#d4a76a}
-.btn-comprar{background:#d4a76a;color:white;border:none;padding:12px 20px;border-radius:10px;font-size:16px;cursor:pointer;font-weight:bold;margin:5px}
-.btn-whatsapp{background:#25D366;color:white;border:none;padding:12px 20px;border-radius:10px;font-size:16px;cursor:pointer;font-weight:bold;margin:5px}
+.btn-comprar{background:#d4a76a;color:white;border:none;padding:12px 20px;border-radius:10px;font-size:16px;cursor:pointer;font-weight:bold;margin:5px;width:90%}
+.btn-whatsapp{background:#25D366;color:white;border:none;padding:12px 20px;border-radius:10px;font-size:16px;cursor:pointer;font-weight:bold;margin:5px;width:90%}
 .btn-comprar:hover{background:#c49756}
 .btn-whatsapp:hover{background:#1ebe5b}
 .seccion{background:white;padding:25px;margin:20px auto;border-radius:12px;max-width:800px;text-align:left}
 .seccion h3{text-align:center;color:#3e2723}
 .pagos{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:15px}
 .pago-box{background:#fff8f0;padding:15px;border-radius:10px;border:2px solid #d4a76a;width:150px}
-.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50%;font-size:24px;text-decoration:none;box-shadow:0 4px 10px rgba(0,0,0,0.3)}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50%;font-size:24px;text-decoration:none;box-shadow:0 4px 10px rgba(0,0,0,0.3);z-index:999}
 .qr{width:120px;margin:10px auto}
 footer{background:#2e1b16;color:white;padding:20px;margin-top:30px}
 </style>
 </head>
 <body>
 <header>
-<img src="logo.png" class="logo">
+<img src="./logo.png" class="logo">
 <h1>W&F <span>Aroma Café</span></h1>
 <p>Café Premium de Lonya Grande</p>
 </header>
 
-<img src="producto.jpg" class="foto">
+<img src="./producto.jpg" class="foto">
 <h2>Café GOURMET 500gr</h2>
 <p>Hecho con amor por W&F 💛</p>
 
 <div class="card">
 <h3>UNIDAD</h3>
 <p>S/ 29.90</p>
-<button class="btn-comprar" onclick="window.open('https://wa.me/51939801761?text=Hola quiero 1 Café Gourmet UNIDAD S/29.90')">🛒 Comprar</button>
-<button class="btn-whatsapp" onclick="window.open('https://wa.me/51939801761?text=Hola quiero info de UNIDAD')">WhatsApp</button>
+<button class="btn-comprar" onclick="window.open('https://wa.me/51939801761?text=Hola W&F, quiero 1 Café Gourmet UNIDAD S/29.90')">🛒 Comprar</button>
+<button class="btn-whatsapp" onclick="window.open('https://wa.me/51939801761?text=Hola W&F, quiero info de UNIDAD')">💬 WhatsApp</button>
 </div>
 
 <div class="card">
 <h3>DÚO</h3>
 <p>S/ 59.90</p>
-<button class="btn-comprar" onclick="window.open('https://wa.me/51939801761?text=Hola quiero DÚO S/59.90')">🛒 Comprar</button>
-<button class="btn-whatsapp" onclick="window.open('https://wa.me/51939801761?text=Hola quiero info de DÚO')">WhatsApp</button>
+<button class="btn-comprar" onclick="window.open('https://wa.me/51939801761?text=Hola W&F, quiero DÚO S/59.90')">🛒 Comprar</button>
+<button class="btn-whatsapp" onclick="window.open('https://wa.me/51939801761?text=Hola W&F, quiero info de DÚO')">💬 WhatsApp</button>
 </div>
 
 <div class="card">
 <h3>TRÍO</h3>
 <p>S/ 89.00</p>
-<button class="btn-comprar" onclick="window.open('https://wa.me/51939801761?text=Hola quiero TRÍO S/89.00')">🛒 Comprar</button>
-<button class="btn-whatsapp" onclick="window.open('https://wa.me/51939801761?text=Hola quiero info de TRÍO')">WhatsApp</button>
+<button class="btn-comprar" onclick="window.open('https://wa.me/51939801761?text=Hola W&F, quiero TRÍO S/89.00')">🛒 Comprar</button>
+<button class="btn-whatsapp" onclick="window.open('https://wa.me/51939801761?text=Hola W&F, quiero info de TRÍO')">💬 WhatsApp</button>
 </div>
 
 <div class="seccion">
