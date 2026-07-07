@@ -7,154 +7,171 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { background-color: #fcf9f5; }
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+        
+        body { 
+            background-color: #fcf8f2; 
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
         .bg-coffee-dark { background-color: #3d2314; }
         .text-coffee-dark { color: #3d2314; }
-        .border-coffee { border-color: #3d2314; }
+        .btn-coffee { background-color: #724429; }
+        .btn-coffee:hover { background-color: #5c351f; }
     </style>
 </head>
-<body class="font-sans text-gray-800">
+<body class="text-gray-800 antialiased">
 
-    <header class="bg-[#fcf9f5] py-4 border-b border-gray-100 shadow-sm sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
-            <nav class="flex space-x-6 text-sm font-medium text-amber-900/80 order-2 md:order-1">
-                <a href="#inicio" class="hover:text-coffee-dark transition-colors">Inicio</a>
-                <a href="#historia" class="hover:text-coffee-dark transition-colors">Nuestra Historia</a>
-            </nav>
-
-            <div class="text-center order-1 md:order-2 flex flex-col items-center">
-                <div class="text-3xl font-serif font-bold text-coffee-dark tracking-wider flex items-center justify-center gap-1">
+    <header class="bg-[#fcf8f2] py-6">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col items-center">
+            
+            <div class="flex flex-col items-center mb-4">
+                <div class="text-amber-800 text-3xl mb-1"><i class="fas fa-seedling"></i></div>
+                <div class="text-4xl font-serif font-bold text-coffee-dark tracking-wide flex items-center justify-center gap-2">
                     <span>W</span>
-                    <span class="text-xl font-sans text-amber-700">&</span>
+                    <span class="text-2xl font-sans text-amber-700 font-light">&</span>
                     <span>F</span>
                 </div>
-                <div class="text-[10px] tracking-widest text-gray-500 uppercase font-semibold -mt-1">Aroma Café</div>
-                <div class="text-coffee-dark mt-0.5"><i class="fas fa-coffee text-xs"></i></div>
+                <div class="text-[11px] tracking-[0.2em] text-amber-900/60 uppercase font-bold mt-1">Aroma Café</div>
+                <div class="text-coffee-dark mt-1 flex items-center gap-1">
+                    <div class="h-[1px] w-6 bg-amber-900/20"></div>
+                    <i class="fas fa-coffee text-sm"></i>
+                    <div class="h-[1px] w-6 bg-amber-900/20"></div>
+                </div>
             </div>
 
-            <nav class="flex space-x-6 text-sm font-medium text-amber-900/80 order-3">
-                <a href="#productos" class="hover:text-coffee-dark transition-colors">Productos</a>
-                <a href="#contacto" class="hover:text-coffee-dark transition-colors">Contacto</a>
-                <a href="#" class="hover:text-coffee-dark transition-colors">Blog</a>
+            <nav class="w-full max-w-2xl flex justify-center items-center space-x-8 text-sm font-medium text-amber-950/80 border-t border-b border-amber-900/10 py-3 mt-2">
+                <a href="#inicio" class="hover:text-amber-600 transition-colors">Inicio</a>
+                <a href="#historia" class="hover:text-amber-600 transition-colors">Nuestra Historia</a>
+                <a href="#productos" class="hover:text-amber-600 transition-colors">Productos</a>
+                <a href="#contacto" class="hover:text-amber-600 transition-colors">Contacto</a>
+                <a href="#" class="hover:text-amber-600 transition-colors">Blog</a>
             </nav>
         </div>
     </header>
 
-    <section id="historia" class="max-w-7xl mx-auto px-4 py-8">
-        <div class="grid md:grid-cols-2 overflow-hidden rounded-2xl shadow-md border border-gray-100">
-            <div class="h-80 md:h-full min-h-[350px] bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80');">
-                <div class="w-full h-full bg-black/10 backdrop-brightness-105"></div>
+    <section id="historia" class="max-w-6xl mx-auto px-4 py-6">
+        <div class="grid md:grid-cols-2 overflow-hidden shadow-sm">
+            <div class="h-80 md:h-auto min-h-[420px] bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80');">
             </div>
             
-            <div class="bg-coffee-dark text-amber-50 p-8 md:p-12 flex flex-col justify-center">
-                <h2 class="text-xl md:text-2xl font-serif font-bold tracking-wide mb-6 uppercase text-white">
+            <div class="bg-[#361e12] text-amber-50 p-8 md:p-12 flex flex-col justify-center">
+                <h2 class="text-xl md:text-2xl font-serif font-bold tracking-wide mb-6 text-white uppercase border-b border-amber-900/30 pb-3">
                     W&F AROMA CAFÉ: UNA HISTORIA DE PASIÓN Y PERÚ.
                 </h2>
-                <div class="space-y-4 text-sm md:text-base text-amber-100/90 leading-relaxed text-justify font-light">
+                <div class="space-y-4 text-sm md:text-[15px] text-amber-100/90 leading-relaxed text-justify font-light">
                     <p>
-                        Desde el corazón de <strong class="text-white font-medium">Lonya Grande, Amazonas</strong>, cultivamos la esencia de nuestra tierra con el máximo respeto y dedicación.
+                        Desde el corazón de <strong class="text-white font-semibold">Lonya Grande, Amazonas,</strong> cultivamos la esencia de nuestra tierra.
                     </p>
                     <p>
-                        W&F Aroma Café no es solo café premium; es un viaje sensorial nacido del esfuerzo y tradición de familias cafetaleras locales y el clima perfecto de nuestra selva alta peruana.
+                        W&F Aroma Café no es solo café premium; es un viaje sensorial nacido de la dedicación de familias cafetaleras locales y el clima perfecto.
                     </p>
                     <p>
-                        Cada grano de nuestro <strong class="text-white font-medium">"Café Premium - Selecto"</strong> es seleccionado minuciosamente a mano para ofrecerte un producto <strong class="text-white font-medium">Gourmet 100% Café Peruano</strong> con un cuerpo balanceado, un aroma intenso y un sabor verdaderamente inigualable.
+                        Cada grano de nuestro <strong class="text-white font-semibold">"Café Premium - Selecto"</strong> es seleccionado a mano para ofrecerte un <strong class="text-white font-semibold">"Gourmet 100% Café Peruano"</strong> con cuerpo, aroma y sabor inigualables.
                     </p>
-                    <p class="pt-2 font-medium text-white italic text-center md:text-left">
-                        ¡Nuestra historia es el aroma que nos une. Descubre la magia en cada taza!
+                    <p class="pt-4 font-serif italic text-amber-200 text-lg text-center md:text-left">
+                        Nuestra historia es el aroma que nos une. ¡Descubre la magia en cada taza!
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="productos" class="max-w-6xl mx-auto px-4 py-12">
-        <h2 class="text-2xl md:text-3xl font-serif font-semibold text-center text-gray-800 mb-10">
+    <section id="productos" class="max-w-6xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-serif text-center text-gray-900 mb-12 tracking-wide">
             Nuestros Cafés Destacados
         </h2>
 
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between p-5 hover:shadow-md transition-shadow">
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100/80 overflow-hidden flex flex-col justify-between p-4 bg-[#fdfbf9]">
                 <div>
-                    <div class="relative w-full h-64 bg-amber-50/50 rounded-xl mb-4 overflow-hidden bg-cover bg-center border border-amber-100/40" style="background-image: url('https://images.unsplash.com/photo-1559056131-c549b1a481a3?auto=format&fit=crop&w=500&q=80');">
-                        <div class="absolute top-2 left-2 bg-coffee-dark text-white font-bold text-xs w-6 h-6 flex items-center justify-center rounded-md">1</div>
+                    <div class="relative w-full h-64 bg-cover bg-center rounded-xl mb-4 border border-gray-100" style="background-image: url('https://images.unsplash.com/photo-1559056131-c549b1a481a3?auto=format&fit=crop&w=600&q=80');">
+                        <div class="absolute top-2 left-2 bg-[#361e12] text-amber-100 font-bold text-xs w-6 h-6 flex items-center justify-center rounded-md">1</div>
                     </div>
-                    <h3 class="font-bold text-gray-800 text-center text-base mb-1">W&F Aroma Café Premium - Selecto (500g)</h3>
-                    <p class="text-center text-sm font-semibold text-amber-900 mb-4">Soles S/ 29.90</p>
+                    <div class="px-2 text-center">
+                        <h3 class="font-serif font-bold text-gray-900 text-base mb-2 leading-tight">W&F Aroma Café Premium - Selecto (500g)</h3>
+                        <p class="text-amber-900 font-medium text-base mb-4 font-sans">Soles S/ 29.90</p>
+                    </div>
                 </div>
-                <a href="https://wa.me/51939801761?text=Hola%20W%26F%20Aroma%20Caf%C3%A9%2C%20deseo%20comprar%201%20Unidad%20de%20Caf%C3%A9%20Premium%20por%20S%2F29.90" target="_blank" class="w-full bg-coffee-dark text-white text-center py-2.5 rounded-xl font-medium text-sm hover:bg-opacity-95 transition-all block">
+                <a href="https://wa.me/51939801761?text=Hola%20W%26F%20Aroma%20Caf%C3%A9%2C%20deseo%20comprar%201%20Unidad%20de%20Caf%C3%A9%20Premium%20por%20S%2F29.90" target="_blank" class="w-full btn-coffee text-white text-center py-2.5 rounded-xl font-medium text-sm transition-all block tracking-wide shadow-xs">
                     Añadir al Carrito
                 </a>
             </div>
 
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between p-5 hover:shadow-md transition-shadow">
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100/80 overflow-hidden flex flex-col justify-between p-4 bg-[#fdfbf9]">
                 <div>
-                    <div class="relative w-full h-64 bg-amber-50/50 rounded-xl mb-4 overflow-hidden bg-cover bg-center border border-amber-100/40" style="background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=500&q=80');">
-                        <div class="absolute top-2 left-2 bg-coffee-dark text-white font-bold text-xs w-6 h-6 flex items-center justify-center rounded-md">2</div>
+                    <div class="relative w-full h-64 bg-cover bg-center rounded-xl mb-4 border border-gray-100" style="background-image: url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=80');">
+                        <div class="absolute top-2 left-2 bg-[#361e12] text-amber-100 font-bold text-xs w-6 h-6 flex items-center justify-center rounded-md">2</div>
                     </div>
-                    <h3 class="font-bold text-gray-800 text-center text-base mb-1">W&F Dúo Selección Especial (1kg Total)</h3>
-                    <p class="text-center text-sm font-semibold text-amber-900 mb-4">Soles S/ 59.90</p>
+                    <div class="px-2 text-center">
+                        <h3 class="font-serif font-bold text-gray-900 text-base mb-2 leading-tight">W&F Dúo Selección Especial (1kg Total)</h3>
+                        <p class="text-amber-900 font-medium text-base mb-4 font-sans">Soles S/ 59.90</p>
+                    </div>
                 </div>
-                <a href="https://wa.me/51939801761?text=Hola%20W%26F%20Aroma%20Caf%C3%A9%2C%20deseo%20comprar%20el%20D%C3%BAo%20Selecci%C3%B3n%20Especial%20por%20S%2F59.90" target="_blank" class="w-full bg-coffee-dark text-white text-center py-2.5 rounded-xl font-medium text-sm hover:bg-opacity-95 transition-all block">
+                <a href="https://wa.me/51939801761?text=Hola%20W%26F%20Aroma%20Caf%C3%A9%2C%20deseo%20comprar%20el%20D%C3%BAo%20Selecci%C3%B3n%20Especial%20por%20S%2F59.90" target="_blank" class="w-full btn-coffee text-white text-center py-2.5 rounded-xl font-medium text-sm transition-all block tracking-wide shadow-xs">
                     Añadir al Carrito
                 </a>
             </div>
 
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between p-5 hover:shadow-md transition-shadow">
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100/80 overflow-hidden flex flex-col justify-between p-4 bg-[#fdfbf9]">
                 <div>
-                    <div class="relative w-full h-64 bg-amber-50/50 rounded-xl mb-4 overflow-hidden bg-cover bg-center border border-amber-100/40" style="background-image: url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=500&q=80');">
-                        <div class="absolute top-2 left-2 bg-coffee-dark text-white font-bold text-xs w-6 h-6 flex items-center justify-center rounded-md">3</div>
+                    <div class="relative w-full h-64 bg-cover bg-center rounded-xl mb-4 border border-gray-100" style="background-image: url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80');">
+                        <div class="absolute top-2 left-2 bg-[#361e12] text-amber-100 font-bold text-xs w-6 h-6 flex items-center justify-center rounded-md">3</div>
                     </div>
-                    <h3 class="font-bold text-gray-800 text-center text-base mb-1">W&F Trío Gourmet Completo (1.5kg Total)</h3>
-                    <p class="text-center text-sm font-semibold text-amber-900 mb-4">Soles S/ 89.00</p>
+                    <div class="px-2 text-center">
+                        <h3 class="font-serif font-bold text-gray-900 text-base mb-2 leading-tight">W&F Trío Gourmet Completo (1.5kg Total)</h3>
+                        <p class="text-amber-900 font-medium text-base mb-4 font-sans">Soles S/ 89.00</p>
+                    </div>
                 </div>
-                <a href="https://wa.me/51939801761?text=Hola%20W%26F%20Aroma%20Caf%C3%A9%2C%20deseo%20comprar%20el%20Tr%C3%ADo%20Gourmet%20Completo%20por%20S%2F89.00" target="_blank" class="w-full bg-coffee-dark text-white text-center py-2.5 rounded-xl font-medium text-sm hover:bg-opacity-95 transition-all block">
+                <a href="https://wa.me/51939801761?text=Hola%20W%26F%20Aroma%20Caf%C3%A9%2C%20deseo%20comprar%20el%20Tr%C3%ADo%20Gourmet%20Completo%20por%20S%2F89.00" target="_blank" class="w-full btn-coffee text-white text-center py-2.5 rounded-xl font-medium text-sm transition-all block tracking-wide shadow-xs">
                     Añadir al Carrito
                 </a>
             </div>
+
         </div>
     </section>
 
-    <section id="contacto" class="max-w-4xl mx-auto px-4 py-12 border-t border-amber-100/60 mt-6">
-        <h2 class="text-2xl font-serif font-semibold text-center text-gray-800 mb-8">
+    <section id="contacto" class="max-w-4xl mx-auto px-6 py-12 border-t border-amber-900/10 mb-12">
+        <h2 class="text-2xl font-serif font-bold text-center text-gray-900 mb-10 tracking-wide">
             Contáctanos y Compra Fácil
         </h2>
 
-        <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
             <div class="flex flex-col items-center text-center">
-                <h3 class="font-bold text-gray-800 text-sm uppercase tracking-wider mb-4">¡Escanea y Haz tu Pedido por WhatsApp!</h3>
+                <h3 class="font-bold text-gray-800 text-xs uppercase tracking-wider mb-4">¡Escanea y Haz tu Pedido por WhatsApp!</h3>
                 
-                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 inline-block">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/51939801761?text=Hola%20W%26F%20Aroma%20Caf%C3%A9%2C%20me%20gustar%C3%ADa%20hacer%20un%20pedido." 
-                         alt="QR WhatsApp W&F" 
-                         class="w-44 h-44">
+                <div class="bg-white p-4 rounded-2xl shadow-md border border-gray-100 inline-block">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://wa.me/51939801761?text=Hola%20W%26F%20Aroma%20Caf%C3%A9%2C%20me%20gustar%C3%ADa%20hacer%20un%20pedido." 
+                         alt="QR de WhatsApp" 
+                         class="w-40 h-40">
                 </div>
                 
-                <p class="text-xs text-gray-500 mt-4 max-w-xs">
-                    Pedidos rápidos, consultas y atención personalizada a un solo escaneo.
+                <p class="text-[11px] text-gray-500 mt-3 max-w-xs leading-relaxed">
+                    Pedidos rápidos, consultas y atención personalizada.
                 </p>
-                
-                <a href="https://wa.me/51939801761?text=Hola%20W%26F%20Aroma%20Caf%C3%A9%2C%20me%20gustar%C3%ADa%20hacer%20un%20pedido." 
-                   target="_blank" 
-                   class="mt-3 inline-flex items-center gap-2 bg-green-600 text-white font-medium text-xs px-4 py-2 rounded-xl hover:bg-green-700 transition-colors">
-                    <i class="fab fa-whatsapp text-sm"></i> Chatear Ahora
-                </a>
             </div>
 
-            <div class="flex flex-col items-center md:items-start text-center md:text-left">
-                <h3 class="font-bold text-gray-800 text-sm uppercase tracking-wider mb-6 w-full text-center">Métodos de Pago Seguros</h3>
+            <div class="flex flex-col items-center">
+                <h3 class="font-bold text-gray-800 text-xs uppercase tracking-wider mb-6 text-center w-full">Métodos de Pago Seguros</h3>
                 
-                <div class="grid grid-cols-2 gap-4 w-full max-w-xs mx-auto">
-                    <div class="bg-white border border-gray-200 rounded-xl p-3 flex items-center justify-center h-14 shadow-2xs font-bold text-blue-800 text-lg italic tracking-tight">
+                <div class="grid grid-cols-2 gap-3 w-full max-w-xs">
+                    <div class="bg-white border border-gray-200 rounded-xl p-3 flex items-center justify-center h-14 shadow-2xs font-serif font-black text-blue-800 text-xl italic tracking-tight">
                         VISA
                     </div>
-                    <div class="bg-white border border-gray-200 rounded-xl p-3 flex items-center justify-center h-14 shadow-2xs font-bold text-red-500 text-sm tracking-tight">
-                        mastercard
+                    <div class="bg-white border border-gray-200 rounded-xl p-3 flex flex-col items-center justify-center h-14 shadow-2xs">
+                        <div class="flex space-x-1 justify-center items-center">
+                            <div class="w-4 h-4 bg-red-500 rounded-full opacity-90"></div>
+                            <div class="w-4 h-4 bg-amber-500 rounded-full -ml-2 opacity-90"></div>
+                        </div>
+                        <span class="text-[9px] text-gray-400 uppercase tracking-tighter mt-1 font-sans">mastercard</span>
                     </div>
-                    <div class="bg-purple-900 text-white rounded-xl p-3 flex flex-col items-center justify-center h-14 shadow-2xs font-bold text-xs">
-                        <span class="text-emerald-400 text-base font-black leading-none">yape</span>
+                    <div class="bg-[#742484] text-white rounded-xl p-3 flex flex-col items-center justify-center h-14 shadow-2xs font-bold">
+                        <span class="text-emerald-300 text-base font-black tracking-tight font-sans">yape</span>
                     </div>
-                    <div class="bg-cyan-500 text-white rounded-xl p-3 flex items-center justify-center h-14 shadow-2xs font-black text-lg tracking-wide italic">
+                    <div class="bg-[#00b4ff] text-white rounded-xl p-3 flex items-center justify-center h-14 shadow-2xs font-black text-lg font-sans italic tracking-wide">
                         plin
                     </div>
                 </div>
@@ -162,12 +179,12 @@
         </div>
     </section>
 
-    <footer class="border-t border-gray-200 bg-[#fcf9f5] py-6 text-xs text-gray-500">
-        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2">
+    <footer class="border-t border-amber-900/10 py-6 text-[11px] text-gray-500">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-2">
             <div>
                 Derechos Reservados &copy; 2026 W&F Aroma Café
             </div>
-            <div class="flex space-x-4">
+            <div class="flex space-x-6">
                 <a href="#" class="hover:underline">Política de Privacidad</a>
                 <a href="#" class="hover:underline">Términos de Servicio</a>
             </div>
