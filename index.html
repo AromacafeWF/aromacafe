@@ -2,51 +2,82 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>W&F Aroma Café</title>
 <style>
-body{background:#fff8f0;font-family:Arial;text-align:center;color:#3e2723;margin:0}
-header{background:#3e2723;color:white;padding:30px}
-.logo{width:140px;border-radius:50%;border:4px solid #d4a76a}
-.foto{width:90%;max-width:280px;border-radius:16px;margin:10px auto;display:block}
-h1 span{color:#d4a76a}
-.card{display:inline-block;border:2px solid #d4a76a;padding:20px;margin:10px;border-radius:12px;width:260px;background:white}
-.card p{font-size:22px;font-weight:bold;color:#d4a76a}
-button{background:#d4a76a;color:white;border:none;padding:12px;border-radius:10px;width:90%;margin:5px;cursor:pointer;font-weight:bold}
-.btn-wsp{background:#25D366}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#fff8f0;font-family:Arial,sans-serif;text-align:center;color:#3e2723}
+header{background:#3e2723;color:white;padding:40px 20px}
+.logo{width:140px;height:140px;border-radius:50%;border:4px solid #d4a76a;background:#d4a76a;color:#3e2723;font-size:40px;font-weight:bold;display:flex;align-items:center;justify-content:center;margin:0 auto 10px}
+h1{font-size:32px} h1 span{color:#d4a76a}
+.foto{width:90%;max-width:280px;height:280px;background:linear-gradient(135deg,#d4a76a,#8b5a2b);border-radius:16px;margin:10px auto;display:flex;align-items:center;justify-content:center;color:white;font-size:20px;font-weight:bold;box-shadow:0 4px 15px rgba(0,0,0,0.2)}
+h2{margin:25px 0;color:#3e2723}
+.card{display:inline-block;border:3px solid #d4a76a;padding:20px;margin:15px;border-radius:15px;width:280px;background:white;vertical-align:top}
+.card h3{font-size:24px;margin:10px 0}
+.card p{font-size:26px;font-weight:bold;color:#d4a76a;margin:10px 0}
+.btn-comprar{background:#d4a76a;color:white;border:none;padding:14px;border-radius:10px;font-size:16px;cursor:pointer;font-weight:bold;margin:5px;width:95%}
+.btn-whatsapp{background:#25D366;color:white;border:none;padding:14px;border-radius:10px;font-size:16px;cursor:pointer;font-weight:bold;margin:5px;width:95%}
+.seccion{background:white;padding:30px;margin:30px auto;border-radius:15px;max-width:900px;text-align:left;line-height:1.6}
+.pagos{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.pago-box{background:#fff8f0;padding:20px;border-radius:12px;border:2px solid #d4a76a;width:170px;font-weight:bold}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:18px;border-radius:50%;font-size:28px;text-decoration:none;z-index:999}
+footer{background:#3e2723;color:white;padding:20px;margin-top:30px}
 </style>
 </head>
 <body>
+
 <header>
-<img src="logo.png" class="logo">
+<div class="logo">W&F</div>
 <h1>W&F <span>Aroma Café</span></h1>
-<p>Café Premium de Lonya Grande</p>
+<p>Café Premium de Lonya Grande - Amazonas</p>
 </header>
 
-<h2>Café GOURMET 500gr - Hecho por W&F 💛</h2>
+<h2>Café GOURMET 500gr</h2>
+<p style="font-size:18px;margin-bottom:20px">Hecho con amor por W&F 💛</p>
 
 <div class="card">
-<img src="producto1.jpg" class="foto">
+<div class="foto">1 BOLSITA<br>500gr</div>
 <h3>UNIDAD</h3>
 <p>S/ 29.90</p>
-<button onclick="window.open('https://wa.me/51939801761?text=Hola W&F, quiero 1 Café UNIDAD')">🛒 Comprar</button>
-<button class="btn-wsp" onclick="window.open('https://wa.me/51939801761')">💬 WhatsApp</button>
+<button class="btn-comprar" onclick="window.open('https://wa.me/51939801761?text=Hola%20W%26F,%20quiero%201%20Café%20Gourmet%20UNIDAD%20S/29.90')">🛒 Comprar Ahora</button>
+<button class="btn-whatsapp" onclick="window.open('https://wa.me/51939801761?text=Hola%20W%26F,%20quiero%20info%20de%20UNIDAD')">💬 WhatsApp</button>
 </div>
 
 <div class="card">
-<img src="producto2.jpg" class="foto">
+<div class="foto">2 BOLSITAS<br>500gr c/u</div>
 <h3>DÚO</h3>
 <p>S/ 59.90</p>
-<button onclick="window.open('https://wa.me/51939801761?text=Hola W&F, quiero DÚO')">🛒 Comprar</button>
-<button class="btn-wsp" onclick="window.open('https://wa.me/51939801761')">💬 WhatsApp</button>
+<button class="btn-comprar" onclick="window.open('https://wa.me/51939801761?text=Hola%20W%26F,%20quiero%20DÚO%20S/59.90')">🛒 Comprar Ahora</button>
+<button class="btn-whatsapp" onclick="window.open('https://wa.me/51939801761?text=Hola%20W%26F,%20quiero%20info%20de%20DÚO')">💬 WhatsApp</button>
 </div>
 
 <div class="card">
-<img src="producto3.jpg" class="foto">
+<div class="foto">3 BOLSITAS<br>500gr c/u</div>
 <h3>TRÍO</h3>
 <p>S/ 89.00</p>
-<button onclick="window.open('https://wa.me/51939801761?text=Hola W&F, quiero TRÍO')">🛒 Comprar</button>
-<button class="btn-wsp" onclick="window.open('https://wa.me/51939801761')">💬 WhatsApp</button>
+<button class="btn-comprar" onclick="window.open('https://wa.me/51939801761?text=Hola%20W%26F,%20quiero%20TRÍO%20S/89.00')">🛒 Comprar Ahora</button>
+<button class="btn-whatsapp" onclick="window.open('https://wa.me/51939801761?text=Hola%20W%26F,%20quiero%20info%20de%20TRÍO')">💬 WhatsApp</button>
 </div>
+
+<div class="seccion">
+<h3>☕ Nuestra Historia</h3>
+<p>Somos <b>W&F Aroma Café</b> de Lonya Grande. Cultivamos nuestro café en las alturas de Amazonas a más de 1200msnm. Cada grano es seleccionado a mano por W&F y tostado artesanalmente para llevarte el mejor aroma directo a tu taza.</p>
+</div>
+
+<div class="seccion">
+<h3>💳 Medios de Pago</h3>
+<div class="pagos">
+<div class="pago-box">Yape<br>939 801 761</div>
+<div class="pago-box">Plin<br>939 801 761</div>
+<div class="pago-box">Transferencia<br>BCP / Interbank</div>
+</div>
+</div>
+
+<a href="https://wa.me/51939801761" class="whatsapp-float">💬</a>
+
+<footer>
+<p>© 2026 W&F Aroma Café | Lonya Grande, Amazonas</p>
+</footer>
 
 </body>
 </html>
