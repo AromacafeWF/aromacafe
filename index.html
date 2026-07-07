@@ -1,24 +1,70 @@
-<html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>W&F Aroma Café</title>
-<style>body{margin:0;font-family:Arial;background:#fff8f0}.c{max-width:420px;margin:auto;background:#fff}.h{background:#3e2723;color:#fff;text-align:center;padding:25px 15px}.h img{width:90px;border-radius:50%;border:3px solid #d4a76a}.h h1{margin:10px 0 5px;font-size:24px}.h span{color:#d4a76a}.p{border:2px solid #d4a76a;border-radius:12px;margin:15px;padding:15px;text-align:center}.p img{width:100%;border-radius:10px}.pre{font-size:30px;color:#d4a76a;font-weight:bold;margin:10px 0}.b{width:100%;padding:14px;border:none;border-radius:10px;font-size:16px;font-weight:bold;color:#fff;background:#25D366}</style>
-</head><body><div class="c">
-<div class="h">
-<img src="ATTACHMENT_1">
-<h1>W&F <span>Aroma Café</span></h1>
-<p>Café Premium 500gr - Lonya Grande</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W&F Aroma Café</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #fcfaf7; color: #3e2723; margin: 0; padding: 0; }
+        .hero-img { width: 100%; height: 250px; object-fit: cover; }
+        .container { padding: 20px; max-width: 600px; margin: auto; }
+        
+        .seccion-texto { margin: 20px 0; line-height: 1.6; }
+        .beneficios { background: #efebe9; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        
+        /* Lista vertical de productos */
+        .producto-vertical { background: #fff; border: 1px solid #d7ccc8; padding: 15px; margin-bottom: 10px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; }
+        
+        .btn-compra { background: #5d4037; color: #fff; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-size: 0.9em; }
+        .btn-ws { display: block; background: #25d366; color: white; padding: 15px; text-decoration: none; border-radius: 30px; text-align: center; font-weight: bold; margin: 20px 0; }
+        
+        /* Sección de pagos */
+        .pagos-seccion { text-align: center; margin-top: 30px; padding: 20px; border-top: 1px solid #efebe9; }
+        .logo-pago { width: 50px; margin: 0 10px; }
+    </style>
+</head>
+<body>
+
+<img src="ruta_de_tu_foto_cosecha.jpg" class="hero-img" alt="Cosecha de café">
+
+<div class="container">
+    <h1>W&F Aroma Café</h1>
+    
+    <section class="seccion-texto">
+        <h2>Nuestra Historia</h2>
+        <p>En W&F Aroma Café, nuestra pasión nace del compromiso con la tierra. Desde el corazón de Lonya Grande, Amazonas, cultivamos la esencia de nuestras raíces. Gran Vilaya Café SAC nace con el propósito de llevar a tu taza un café que no es solo una bebida, sino un viaje sensorial nacido de la dedicación de nuestras familias cafetaleras locales y el clima perfecto de nuestra región.</p>
+    </section>
+
+    <section class="beneficios">
+        <h3>¿Por qué elegir nuestro Café Pasado?</h3>
+        <p>El café pasado es una tradición que respeta el grano. A diferencia de otros métodos, permite que el agua caliente repose y extraiga lentamente todos los aceites esenciales, resultando en un cuerpo intenso, un aroma que inunda el ambiente y una experiencia de sabor puro que conecta directamente con el origen.</p>
+    </section>
+
+    <h2>Nuestros Productos</h2>
+    
+    <div class="producto-vertical">
+        <div><strong>Unidad (500g)</strong><br>S/ 29.90</div>
+        <a href="#" class="btn-compra">Añadir</a>
+    </div>
+    
+    <div class="producto-vertical">
+        <div><strong>Dúo Selección (1kg)</strong><br>S/ 59.90</div>
+        <a href="#" class="btn-compra">Añadir</a>
+    </div>
+    
+    <div class="producto-vertical">
+        <div><strong>Trío Gourmet (1.5kg)</strong><br>S/ 89.00</div>
+        <a href="#" class="btn-compra">Añadir</a>
+    </div>
+
+    <a href="https://wa.me/519XXXXXXXX" class="btn-ws">PEDIR POR WHATSAPP</a>
+
+    <div class="pagos-seccion">
+        <p>Métodos de Pago</p>
+        <img src="yape.png" class="logo-pago" alt="Yape">
+        <img src="plin.png" class="logo-pago" alt="Plin">
+    </div>
 </div>
-<div class="p">
-<img src="ATTACHMENT_2">
-<h3>UNIDAD</h3><p>1 Bolsita 500gr</p><p class="pre">S/ 29.90</p>
-<button class="b" onclick="window.open('https://wa.me/51939801761?text=Hola%20quiero%201%20UNIDAD%20S/29.90')">Comprar por WhatsApp</button>
-</div>
-<div class="p">
-<img src="ATTACHMENT_2">
-<h3>DÚO AHORRO</h3><p>2 Bolsitas 500gr</p><p class="pre">S/ 59.90</p>
-<button class="b" onclick="window.open('https://wa.me/51939801761?text=Hola%20quiero%20DUO%20S/59.90')">Comprar por WhatsApp</button>
-</div>
-<div class="p">
-<img src="ATTACHMENT_2">
-<h3>TRÍO FAMILIAR</h3><p>3 Bolsitas 500gr</p><p class="pre">S/ 89.00</p>
-<button class="b" onclick="window.open('https://wa.me/51939801761?text=Hola%20quiero%20TRIO%20S/89.00')">Comprar por WhatsApp</button>
-</div>
-</div></body></html>
+
+</body>
+</html>
