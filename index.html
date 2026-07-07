@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W&F Aroma Café</title>
+    <!-- Tailwind CSS para el diseño -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -24,162 +25,148 @@
 </head>
 <body class="text-gray-800 antialiased">
 
+    <!-- 1. ENCABEZADO / LOGO -->
     <header class="bg-[#fbf7f0] py-6">
         <div class="max-w-5xl mx-auto px-6 flex flex-col items-center">
+            <!-- Tu Logo Oficial -->
             <div class="flex flex-col items-center mb-4">
                 <img src="38854.jpg" alt="W&F Aroma Café Logo" class="h-28 w-auto object-contain mb-2">
             </div>
 
+            <!-- Menú de Navegación -->
             <nav class="w-full max-w-2xl flex justify-center items-center space-x-8 text-sm font-medium text-amber-950/80 border-t border-b border-amber-900/10 py-3">
                 <a href="#inicio" class="hover:text-amber-700 transition-colors">Inicio</a>
                 <a href="#historia" class="hover:text-amber-700 transition-colors">Nuestra Historia</a>
                 <a href="#productos" class="hover:text-amber-700 transition-colors">Productos</a>
                 <a href="#contacto" class="hover:text-amber-700 transition-colors">Contacto</a>
-                <a href="#" class="hover:text-amber-700 transition-colors">Blog</a>
             </nav>
         </div>
     </header>
 
+    <!-- 2. SECCIÓN NUESTRA HISTORIA -->
     <section id="historia" class="max-w-5xl mx-auto px-4 py-4">
-        <div class="grid md:grid-cols-2 overflow-hidden shadow-xs border border-gray-100">
+        <div class="grid md:grid-cols-2 overflow-hidden shadow-sm border border-gray-100 rounded-2xl bg-white">
+            <!-- Izquierda: Imagen del Café -->
             <div class="h-80 md:h-auto min-h-[400px] bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80');">
             </div>
             
+            <!-- Derecha: Texto de la Historia -->
             <div class="bg-coffee-dark text-amber-50 p-8 md:p-10 flex flex-col justify-center">
                 <h2 class="text-xl font-serif font-bold tracking-wide mb-4 text-white uppercase">
-                    W&F AROMA CAFÉ: UNA HISTORIA DE PASIÓN Y PERÚ.
+                    W&F AROMA CAFÉ: PASIÓN Y TRADICIÓN PERUANA
                 </h2>
                 <div class="space-y-4 text-sm leading-relaxed text-justify font-light text-amber-100/90">
                     <p>
-                        Desde el corazón de Lonya Grande, Amazonas, cultivamos la esencia de nuestra tierra con el máximo respeto y dedicación.
+                        Cultivado en las mejores zonas cafetaleras del Perú, traemos un grano seleccionado con los más altos estándares de calidad. 
                     </p>
                     <p>
-                        W&F Aroma Café no es solo café premium; es un viaje sensorial nacido de la dedicación de familias cafetaleras locales y el clima perfecto de nuestra selva alta peruana.
-                    </p>
-                    <p>
-                        Cada grano de nuestro "Café Premium - Selecto" es seleccionado a mano para ofrecerte un "Gourmet 100% Café Peruano" con cuerpo, aroma y sabor inigualables.
+                        Cada taza de W&F Aroma Café refleja el esfuerzo de productores locales que cuidan la tierra para ofrecer un producto premium, gourmet y con un aroma incomparable.
                     </p>
                     <p class="pt-2 font-serif italic text-amber-200 text-center md:text-left">
-                        Nuestra historia es el aroma que nos une. ¡Descubre la magia en cada taza!
+                        ¡Descubre la magia y el cuerpo de un verdadero café artesanal!
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- 3. SECCIÓN PRODUCTOS DESTACADOS (CON TUS IMÁGENES Y PRECIOS) -->
     <section id="productos" class="max-w-5xl mx-auto px-4 py-12">
         <h2 class="text-2xl font-serif font-bold text-center text-gray-900 mb-8">
-            Nuestros Cafés Destacados
+            Nuestros Cafés Disponibles
         </h2>
 
         <div class="grid md:grid-cols-3 gap-6">
             
+            <!-- Producto 1: Unidad -->
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 flex flex-col justify-between">
                 <div>
                     <div class="relative w-full h-72 rounded-xl mb-4 overflow-hidden border border-gray-100">
-                        <img src="38959.jpg" alt="W&F Aroma Café Premium" class="w-full h-full object-cover">
-                        <div class="absolute top-0 left-0 bg-coffee-dark text-white font-bold text-xs w-6 h-6 flex items-center justify-center rounded-br-xl">1</div>
+                        <img src="38959.jpg" alt="Café Premium Unidad" class="w-full h-full object-cover">
                     </div>
                     <div class="text-center px-1">
-                        <h3 class="font-medium text-gray-900 text-sm mb-1">W&F Aroma Café Premium - Selecto (500g)</h3>
-                        <p class="text-amber-900 font-semibold text-sm mb-4">Soles S/ 29.90</p>
+                        <h3 class="font-medium text-gray-900 text-sm mb-1">W&F Aroma Café Premium (500g)</h3>
+                        <p class="text-amber-900 font-semibold text-base mb-4">S/ 29.90</p>
                     </div>
                 </div>
-                <a href="https://wa.me/51939801761?text=Hola%20W%26F%20Aroma%20Caf%C3%A9%2C%20deseo%20pedir%201%20Unidad%20de%20Caf%C3%A9%20Premium%20Selecto%20por%20S%2F%2029.90" target="_blank" class="w-full btn-coffee text-white text-center py-2.5 rounded-xl font-medium text-xs transition-all block">
-                    Añadir al Carrito
+                <a href="https://wa.me/51939801761?text=Hola%20W%26F%20Aroma%20Caf%C3%A9%2C%20deseo%20comprar%201%20Unidad%20de%20Caf%C3%A9%20Premium%20por%20S%2F%2029.90" target="_blank" class="w-full btn-coffee text-white text-center py-2.5 rounded-xl font-medium text-xs transition-all block">
+                    <i class="fab fa-whatsapp mr-1.5 text-sm"></i> Añadir al Carrito
                 </a>
             </div>
 
+            <!-- Producto 2: Dúo -->
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 flex flex-col justify-between">
                 <div>
                     <div class="relative w-full h-72 rounded-xl mb-4 overflow-hidden border border-gray-100">
-                        <img src="40214.jpg" alt="W&F Dúo Selección Especial" class="w-full h-full object-cover">
-                        <div class="absolute top-0 left-0 bg-coffee-dark text-white font-bold text-xs w-6 h-6 flex items-center justify-center rounded-br-xl">2</div>
+                        <img src="40214.jpg" alt="Café Premium Dúo" class="w-full h-full object-cover">
                     </div>
                     <div class="text-center px-1">
-                        <h3 class="font-medium text-gray-900 text-sm mb-1">W&F Dúo Selección Especial (1kg Total)</h3>
-                        <p class="text-amber-900 font-semibold text-sm mb-4">Soles S/ 59.90</p>
+                        <h3 class="font-medium text-gray-900 text-sm mb-1">W&F Dúo Selección Especial (1kg)</h3>
+                        <p class="text-amber-900 font-semibold text-base mb-4">S/ 59.90</p>
                     </div>
                 </div>
-                <a href="https://wa.me/51939801761?text=Hola%20W%26F%20Aroma%20Caf%C3%A9%2C%20deseo%20pedir%20el%20D%C3%BAo%20Selecci%C3%B3n%20Especial%20por%20S%2F%2059.90" target="_blank" class="w-full btn-coffee text-white text-center py-2.5 rounded-xl font-medium text-xs transition-all block">
-                    Añadir al Carrito
+                <a href="https://wa.me/51939801761?text=Hola%20W%26F%20Aroma%20Caf%C3%A9%2C%20deseo%20comprar%20el%20D%C3%BAo%20Selecci%C3%B3n%20Especial%20por%20S%2F%2059.90" target="_blank" class="w-full btn-coffee text-white text-center py-2.5 rounded-xl font-medium text-xs transition-all block">
+                    <i class="fab fa-whatsapp mr-1.5 text-sm"></i> Añadir al Carrito
                 </a>
             </div>
 
+            <!-- Producto 3: Trío -->
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 flex flex-col justify-between">
                 <div>
                     <div class="relative w-full h-72 rounded-xl mb-4 overflow-hidden border border-gray-100">
-                        <img src="40215.jpg" alt="W&F Trío Gourmet Completo" class="w-full h-full object-cover">
-                        <div class="absolute top-0 left-0 bg-coffee-dark text-white font-bold text-xs w-6 h-6 flex items-center justify-center rounded-br-xl">3</div>
+                        <img src="40215.jpg" alt="Café Premium Trío" class="w-full h-full object-cover">
                     </div>
                     <div class="text-center px-1">
-                        <h3 class="font-medium text-gray-900 text-sm mb-1">W&F Trío Gourmet Completo (1.5kg Total)</h3>
-                        <p class="text-amber-900 font-semibold text-sm mb-4">Soles S/ 89.00</p>
+                        <h3 class="font-medium text-gray-900 text-sm mb-1">W&F Trío Gourmet Completo (1.5kg)</h3>
+                        <p class="text-amber-900 font-semibold text-base mb-4">S/ 89.00</p>
                     </div>
                 </div>
-                <a href="https://wa.me/51939801761?text=Hola%20W%26F%20Aroma%20Caf%C3%A9%2C%20deseo%20pedir%20el%20Tr%C3%ADo%20Gourmet%20Completo%20por%20S%2F%2089.00" target="_blank" class="w-full btn-coffee text-white text-center py-2.5 rounded-xl font-medium text-xs transition-all block">
-                    Añadir al Carrito
+                <a href="https://wa.me/51939801761?text=Hola%20W%26F%20Aroma%20Caf%C3%A9%2C%20deseo%20comprar%20el%20Tr%C3%ADo%20Gourmet%20Completo%20por%20S%2F%2089.00" target="_blank" class="w-full btn-coffee text-white text-center py-2.5 rounded-xl font-medium text-xs transition-all block">
+                    <i class="fab fa-whatsapp mr-1.5 text-sm"></i> Añadir al Carrito
                 </a>
             </div>
 
         </div>
     </section>
 
+    <!-- 4. CONTÁCTANOS Y PAGOS -->
     <section id="contacto" class="max-w-4xl mx-auto px-6 py-12 border-t border-amber-900/10 mb-6">
-        <h2 class="text-xl font-serif font-bold text-center text-gray-900 mb-8">
-            Contáctanos y Compra Fácil
-        </h2>
-
         <div class="grid md:grid-cols-2 gap-10 items-start">
+            
+            <!-- Código QR para Pedidos Directos -->
             <div class="flex flex-col items-center text-center">
-                <h3 class="font-bold text-gray-800 text-xs uppercase tracking-wider mb-4">¡Escanea y Haz tu Pedido por WhatsApp!</h3>
-                
+                <h3 class="font-bold text-gray-800 text-xs uppercase tracking-wider mb-4">¡Escanea para pedir por WhatsApp!</h3>
                 <div class="bg-white p-4 rounded-xl shadow-xs border border-gray-100 inline-block">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/51939801761?text=Hola%20W%26F%20Aroma%20Caf%C3%A9%2C%20me%20gustar%C3%ADa%20hacer%20un%20pedido." 
-                         alt="QR WhatsApp" 
-                         class="w-36 h-36">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/51939801761?text=Hola%20W%26F%20Aroma%20Caf%C3%A9%2C%20me%20gustar%C3%ADa%20hacer%20un%20pedido." alt="QR WhatsApp" class="w-36 h-36">
                 </div>
-                
-                <p class="text-[11px] text-gray-500 mt-3 max-w-xs">
-                    Pedidos rápidos, consultas y atención personalizada.
-                </p>
+                <p class="text-[11px] text-gray-500 mt-3 max-w-xs">Atención inmediata y personalizada.</p>
             </div>
 
+            <!-- Formas de Pago Incluyendo Yape -->
             <div class="flex flex-col items-center">
-                <h3 class="font-bold text-gray-800 text-xs uppercase tracking-wider mb-6 text-center w-full">Métodos de Pago Seguros</h3>
-                
+                <h3 class="font-bold text-gray-800 text-xs uppercase tracking-wider mb-6 text-center w-full">Métodos de Pago Aceptados</h3>
                 <div class="grid grid-cols-2 gap-3 w-full max-w-xs">
-                    <div class="bg-white border border-gray-200 rounded-xl p-3 flex items-center justify-center h-12 text-blue-800 font-serif font-black italic text-lg shadow-2xs">
+                    <div class="bg-[#742484] text-white rounded-xl p-3 flex items-center justify-center h-12 font-bold font-sans text-sm shadow-xs uppercase">
+                        Yape
+                    </div>
+                    <div class="bg-[#00b4ff] text-white rounded-xl p-3 flex items-center justify-center h-12 font-black font-sans italic text-base shadow-xs uppercase">
+                        Plin
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-3 flex items-center justify-center h-12 text-blue-800 font-serif font-black italic text-lg shadow-xs">
                         VISA
                     </div>
-                    <div class="bg-white border border-gray-200 rounded-xl p-3 flex flex-col items-center justify-center h-12 shadow-2xs">
-                        <div class="flex space-x-1 justify-center items-center">
-                            <div class="w-3 h-3 bg-red-500 rounded-full opacity-90"></div>
-                            <div class="w-3 h-3 bg-amber-500 rounded-full -ml-1.5 opacity-90"></div>
-                        </div>
-                        <span class="text-[8px] text-gray-400 uppercase tracking-tighter font-sans mt-0.5">mastercard</span>
-                    </div>
-                    <div class="bg-[#742484] text-white rounded-xl p-3 flex items-center justify-center h-12 font-bold font-sans text-sm shadow-2xs">
-                        yape
-                    </div>
-                    <div class="bg-[#00b4ff] text-white rounded-xl p-3 flex items-center justify-center h-12 font-black font-sans italic text-base shadow-2xs">
-                        plin
+                    <div class="bg-white border border-gray-200 rounded-xl p-3 flex flex-col items-center justify-center h-12 shadow-xs">
+                        <span class="text-[10px] text-gray-500 uppercase font-bold tracking-wider">Transferencia</span>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <footer class="border-t border-amber-900/10 py-4 text-[10px] text-gray-500">
-        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-2">
-            <div>
-                Derechos Reservados &copy; 2026 W&F Aroma Café
-            </div>
-            <div class="flex space-x-4">
-                <a href="#" class="hover:underline">Política de Privacidad</a>
-                <a href="#" class="hover:underline">Términos de Servicio</a>
-            </div>
-        </div>
+    <!-- 5. PIE DE PÁGINA -->
+    <footer class="border-t border-amber-900/10 py-6 text-[11px] text-gray-500 text-center">
+        <p>Derechos Reservados &copy; 2026 W&F Aroma Café</p>
     </footer>
 
 </body>
